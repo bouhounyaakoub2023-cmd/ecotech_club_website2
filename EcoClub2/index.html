@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[CLUB_DESCRIPTION] - Join our student club dedicated to ecology and nature">
+    <title>[CLUB_NAME] - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SVG Icons Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+        <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+        <symbol id="icon-vision" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+        <symbol id="icon-mission" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+        <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="icon-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+        <symbol id="icon-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6M10 22h4M15 8a3 3 0 0 0-6 0c0 2 1 3 1 5h4c0-2 1-3 1-5z"/><path d="M12 2v1"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></symbol>
+    </svg>
+
+    <!-- Navigation — Minimal, refined -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="logo-image">
+                <span class="logo-text">[CLUB_NAME]</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="join.html" class="nav-link cta-nav">Join Us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section — Luxe editorial avec image organique -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-inner">
+            <h1 class="hero-title">
+                <span class="hero-title-line">[HERO_TITLE]</span>
+                <span class="hero-title-line">[HERO_SUBTITLE]</span>
+            </h1>
+            <div class="hero-image-wrap">
+                <div class="hero-gallery">
+                    <div class="hero-image-oval primary">
+                        <img src="[HERO_IMAGE]" alt="[CLUB_NAME] hero" loading="eager">
+                    </div>
+                    <div class="hero-image-oval secondary" aria-hidden="true">
+                        <img src="[HERO_IMAGE_2]" alt="" loading="lazy">
+                    </div>
+                    <div class="hero-image-oval tertiary" aria-hidden="true">
+                        <img src="[HERO_IMAGE_3]" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <p class="hero-tagline">[CLUB_TAGLINE]</p>
+            <a href="join.html" class="btn-primary">Join Us</a>
+        </div>
+        <!-- Scroll indicator — Cercle élégant avec chevron -->
+        <a href="#who-we-are" class="scroll-indicator" aria-label="Scroll">
+            <span class="scroll-circle">
+                <svg width="20" height="20" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </span>
+        </a>
+        <!-- Section indicators — 01, 02, 03 -->
+        <nav class="section-indicators" aria-label="Section navigation">
+            <a href="#who-we-are" class="section-num active">01</a>
+            <a href="#vision-mission" class="section-num">02</a>
+            <a href="#values" class="section-num">03</a>
+        </nav>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="section who-we-are" id="who-we-are" data-aos="fade-up">
+        <div class="container">
+            <span class="section-number">01</span>
+            <div class="section-content">
+                <div class="text-content">
+                    <h2 class="section-title">Who We Are</h2>
+                    <p class="section-text">[CLUB_DESCRIPTION]</p>
+                </div>
+                <div class="illustration-organic">
+                    <div class="organic-shape organic-1"></div>
+                    <div class="organic-shape organic-2"></div>
+                    <div class="organic-shape organic-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="section vision-mission" id="vision-mission" data-aos="fade-up">
+        <div class="container">
+            <span class="section-number">02</span>
+            <div class="cards-grid-2">
+                <article class="card-luxe" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-icon-wrap">
+                        <svg width="32" height="32" aria-hidden="true"><use href="#icon-vision"/></svg>
+                    </div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">[VISION_TEXT]</p>
+                </article>
+                <article class="card-luxe" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon-wrap">
+                        <svg width="32" height="32" aria-hidden="true"><use href="#icon-mission"/></svg>
+                    </div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">[MISSION_TEXT]</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section values" id="values" data-aos="fade-up">
+        <div class="container">
+            <span class="section-number">03</span>
+            <h2 class="section-title centered">Our Values</h2>
+            <div class="values-grid">
+                <article class="value-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="value-icon-wrap">
+                        <svg width="36" height="36" aria-hidden="true"><use href="#icon-globe"/></svg>
+                    </div>
+                    <h3 class="value-title">[VALUE_1]</h3>
+                    <p class="value-text">[VALUE_1_DESC]</p>
+                </article>
+                <article class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon-wrap">
+                        <svg width="36" height="36" aria-hidden="true"><use href="#icon-handshake"/></svg>
+                    </div>
+                    <h3 class="value-title">[VALUE_2]</h3>
+                    <p class="value-text">[VALUE_2_DESC]</p>
+                </article>
+                <article class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon-wrap">
+                        <svg width="36" height="36" aria-hidden="true"><use href="#icon-lightbulb"/></svg>
+                    </div>
+                    <h3 class="value-title">[VALUE_3]</h3>
+                    <p class="value-text">[VALUE_3_DESC]</p>
+                </article>
+                <article class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon-wrap">
+                        <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="value-icon-logo">
+                    </div>
+                    <h3 class="value-title">[VALUE_4]</h3>
+                    <p class="value-text">[VALUE_4_DESC]</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-number" data-target="[STAT_1]">0</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="[STAT_2]">0</div>
+                    <div class="stat-label">Events Organized</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="[STAT_3]">0</div>
+                    <div class="stat-label">Years Active</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">[CLUB_NAME]</h3>
+                    <p class="footer-text">[CLUB_TAGLINE]</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact</h4>
+                    <p class="footer-text">[CONTACT_EMAIL]</p>
+                    <p class="footer-text">[CONTACT_ADDRESS]</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="[SOCIAL_INSTAGRAM]" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-instagram"/></svg></a>
+                        <a href="[SOCIAL_LINKEDIN]" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-linkedin"/></svg></a>
+                        <a href="[SOCIAL_FACEBOOK]" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-facebook"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-section footer-credit">
+                    <p class="footer-credit-text">Created by YAAKOUB BOUHOUN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EcoTech Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="club-config.js"></script>
+    <script src="personalize.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

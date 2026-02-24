@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our departments - [CLUB_NAME]">
+    <title>Our Departments - [CLUB_NAME]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+        <symbol id="icon-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 3.5 2 5.5 0 4.5-3.5 8-8 10.5z"/><path d="M2 21c0-3 1.5-5.5 5.5-8"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    </svg>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="logo-image">
+                <span class="logo-text">[CLUB_NAME]</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="departments.html" class="nav-link active">Departments</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="join.html" class="nav-link cta-nav">Join Us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up">Our Departments</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Discover the different areas of action in our club</p>
+        </div>
+    </section>
+
+    <section class="section departments-section">
+        <div class="container">
+            <div class="departments-grid">
+                <div class="department-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="dept-icon-3d">
+                        <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="dept-logo">
+                    </div>
+                    <h3 class="dept-name">[DEPT_1_NAME]</h3>
+                    <p class="dept-description">[DEPT_1_DESC]</p>
+                    <div class="dept-overlay">
+                        <p class="dept-more">Learn more →</p>
+                    </div>
+                </div>
+                <div class="department-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dept-icon-3d">
+                        <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="dept-logo">
+                    </div>
+                    <h3 class="dept-name">[DEPT_2_NAME]</h3>
+                    <p class="dept-description">[DEPT_2_DESC]</p>
+                    <div class="dept-overlay">
+                        <p class="dept-more">Learn more →</p>
+                    </div>
+                </div>
+                <div class="department-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dept-icon-3d">
+                        <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="dept-logo">
+                    </div>
+                    <h3 class="dept-name">[DEPT_3_NAME]</h3>
+                    <p class="dept-description">[DEPT_3_DESC]</p>
+                    <div class="dept-overlay">
+                        <p class="dept-more">Learn more →</p>
+                    </div>
+                </div>
+                <div class="department-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dept-icon-3d">
+                        <img src="[CLUB_LOGO]" alt="[CLUB_NAME] logo" class="dept-logo">
+                    </div>
+                    <h3 class="dept-name">[DEPT_4_NAME]</h3>
+                    <p class="dept-description">[DEPT_4_DESC]</p>
+                    <div class="dept-overlay">
+                        <p class="dept-more">Learn more →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">[CLUB_NAME]</h3>
+                    <p class="footer-text">[CLUB_TAGLINE]</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact</h4>
+                    <p class="footer-text">[CONTACT_EMAIL]</p>
+                    <p class="footer-text">[CONTACT_ADDRESS]</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="[SOCIAL_INSTAGRAM]" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-instagram"/></svg></a>
+                        <a href="[SOCIAL_LINKEDIN]" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-linkedin"/></svg></a>
+                        <a href="[SOCIAL_FACEBOOK]" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#icon-facebook"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-section footer-credit">
+                    <p class="footer-credit-text">Created by YAAKOUB BOUHOUN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EcoTech Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="club-config.js"></script>
+    <script src="personalize.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
